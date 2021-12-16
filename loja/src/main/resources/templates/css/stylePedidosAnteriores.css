@@ -1,0 +1,39 @@
+.generic{
+	font-size: 14px;
+	color: white;
+}
+
+.topic{
+	font-size: 15px;
+	font-weight: bold;
+	color: white;
+	float: left;
+}
+
+.column {
+	margin-left: 8.6%;
+	float: left;
+    width: 22%;
+    padding: 10px;
+    color: white;
+    border: 1px solid;
+    border-color: gray;
+    margin-bottom: 4%;
+}
+
+/* Clear floats after the columns */
+
+.prodTable{
+	width: 98%;
+	margin-top: 2%;
+	margin-bottom: 1%;
+}
+
+.pageTitle{
+	font-size: 25px;
+	float: left;
+	color: white;
+	margin-left: 7.4%;
+	margin-top: 1.5%;
+	font-style: italic;
+}

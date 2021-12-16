@@ -1,0 +1,70 @@
+<html>
+<head>
+	<meta charset="UTF-8">
+	<title>Soul Veggie</title>
+	<link rel="shortcut icon" href="http://127.0.0.1:8887/img/logo_icon.jpg">
+	<link rel="stylesheet" type="text/css" href="http://127.0.0.1:8887/css/all.css"/>
+	<link rel="stylesheet" type="text/css" href="http://127.0.0.1:8887/css/stylePedidosAnteriores.css"/>
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+  	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</head>
+<body>
+	<div class="master"><!-- Div contains whole site -->
+		<div><!-- Div contains menu -->
+			<nav class="navbar navbar-expand navbar-light d-flex justify-content-between" id="menu">
+				<div class="container">
+					<div class="navbar-nav">
+						<img src="http://127.0.0.1:8887/img/logo_icon.jpg" width="30px" height="30px">
+						<h4 class="tituloMenu f mFooterTitle">Soul Veggie</h4>
+						<a class="a topicosMenu active" href="/home">Home</a>
+						<a class="a topicosMenu" href="/cardapio">Cardápio</a>
+						<a class="a topicosMenu" href="/contato">Contato</a>
+						<a class="a topicosMenu" href="/compra">Compra</a>
+						<a class="a topicosMenu" href="/pedidos/pedidos-anteriores">Pedidos Anteriores</a>
+					</div>
+				</div>
+			</nav>
+		</div>
+		<h3 class="pageTitle">Pedidos Anteriores</h3>
+		<br><br>
+		
+		<div><!-- Div contains pedidos -->
+			<div class="prodTable">
+				<div class="row">
+					<div th:each="pedido : ${listaDePedidos.listaDePedidosDTO}" class="column">
+						<div><p>Id do pedido: </p></div>
+						<div><p th:text="${pedido.id}" class="generic"></p></div>
+					  	<div><p class="topic">Id do produto: </p></div>
+					  	<div><p th:text="${pedido.produtoId}" class="generic"></p></div>
+					    <div><p class="topic">Tempo de preparo:</p></div>
+					    <div><p th:text="${pedido.tempoDePreparo}" class="generic"></p></div>
+					    <div><p class="topic">Status do pedido: </p></div>
+					    <div><p th:text="${pedido.status}" class="generic"></p></div>
+				  	</div>
+				</div>		
+			</div>	
+		</div>
+		
+		<div> <!-- Div footer -->
+			<nav class="navbar navbar-expand navbar-light d-flex justify-content-between" id="menu2">
+				<div class="container">
+					<div class="navbar-nav">
+						<h4 class="titulo f mFooter">O Soul Veggie</h4>
+						<a class="a b mFooter active" href="/home">Home</a>
+						<a class="a b mFooter" href="/cardapio">Cardápio</a>
+						<a class="a b mFooter" href="/contato">Contato</a>
+						<a class="a b mFooter" href="/compra">Compra</a>
+						<a class="a b mFooter" href="/pedidos">Pedidos Anteriores</a>
+					</div>
+				</div>
+				<img class="mFooterImgFacebook" src="http://127.0.0.1:8887/img/facebook_icon.png"
+				width="50" height="45">
+				<img class="mFooterImgInstagram" src="http://127.0.0.1:8887/img/instagram_icon.png" 
+				width="55" height="50">
+			</nav>
+		</div>
+	</div>
+</body>
+</html>
