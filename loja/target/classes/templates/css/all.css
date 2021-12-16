@@ -1,0 +1,103 @@
+.master{
+	width: 100%;
+	background-color:black; 
+}
+
+.navbar{
+	font-size: 15px;
+	height:50px;
+	padding:0;
+	color:white;
+	background-color:black; 
+	margin-bottom: 0px;
+}
+
+#menu{
+	border-bottom: 1px solid;
+	border-color: gray;
+	margin-bottom: 0px;
+	color:white;
+	height: 12%;
+}
+
+#menu2{
+	border-top: 1px solid;
+	border-color: gray;
+	height: 14%;
+	font-size: 16px;
+	font-weight: bold;
+	color:white;
+}
+
+#menuInfo{
+	height: 11%;
+}
+
+.f{ /*define o float = left*/
+	float:left;
+}
+
+.tituloMenu{
+	font-size:23px;
+	font-weight: bold;
+	margin: 0.0em 0;
+	margin-left:15px;
+}
+
+.forBoldWords{
+	color:white;
+	font-size: 20px;
+	font-weight: bold;
+	font-family: verdana;
+}
+
+.topicosMenu{
+	margin: 0.30em 0;
+	margin-left: 20px;
+	margin-right: 20px;
+}
+
+.a{
+	color:white;	
+}
+
+.a:hover{
+	color:green;
+	text-decoration:none;
+}
+
+.b{
+	margin:5px;
+}
+
+.menuInfoFont{
+	font-size: 18px;
+	float:left;
+	margin: 1em 0;
+}
+
+.carousel-caption{
+	background-color:rgba(0, 0, 0, 0.5); 
+}
+
+.footer{
+	width:100%;
+}
+
+.mFooter{
+	margin-left: 15px;
+	margin-right: 40px;
+}
+
+.mFooterTitle{
+	margin-right: 70px;
+}
+
+.mFooterImgFacebook{
+	margin-left:60px;
+	margin-right: 35px;	
+}
+
+.mFooterImgInstagram{
+	margin-right: 35px;	
+}

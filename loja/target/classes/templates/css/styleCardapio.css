@@ -1,0 +1,61 @@
+
+/* Create four equal columns that floats next to each other */
+.column {
+	margin-left: 8.6%;
+	float: left;
+    width: 22%;
+    padding: 10px;
+    color: white;
+    border: 1px solid;
+    border-color: gray;
+    margin-bottom: 4%;
+}
+
+/* Clear floats after the columns */
+
+.prodTable{
+	width: 98%;
+	margin-top: 2%;
+	margin-bottom: 1%;
+}
+
+.pageTitle{
+	font-size: 25px;
+	float: left;
+	color: white;
+	margin-left: 7.4%;
+	margin-top: 1.5%;
+	font-style: italic;
+}
+
+.description{
+	text-align: justify;
+}
+
+.preco{
+	color: white;
+}
+
+.comprar:hover{
+	color: gray;
+	text-decoration: none;
+}
+
+.comprar:visited{
+	color: white;
+	text-decoration: none;
+}
+
+.comprar:active{
+	color: white;
+	text-decoration: none;
+}
+
+.comprar:link{
+	color: white;
+	text-decoration: none;
+}
+
+.nome{
+	float: left;
+}

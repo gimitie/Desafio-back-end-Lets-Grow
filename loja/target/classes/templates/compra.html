@@ -1,0 +1,68 @@
+<html>
+<head>
+	<meta charset="UTF-8">
+	<title>Soul Veggie</title>
+	<link rel="shortcut icon" href="http://127.0.0.1:8887/img/logo_icon.jpg">
+	<link rel="stylesheet" type="text/css" href="http://127.0.0.1:8887/css/all.css"/>
+	<link rel="stylesheet" type="text/css" href="http://127.0.0.1:8887/css/styleCompra.css"/>
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+  	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</head>
+<body>
+	<div class="master"><!-- Div contains whole site -->
+		<div><!-- Div contains menu -->
+			<nav class="navbar navbar-expand navbar-light d-flex justify-content-between" id="menu">
+				<div class="container">
+					<div class="navbar-nav">
+						<img src="http://127.0.0.1:8887/img/logo_icon.jpg" width="30px" height="30px">
+						<h4 class="tituloMenu f mFooterTitle">Soul Veggie</h4>
+						<a class="a topicosMenu active" href="/home">Home</a>
+						<a class="a topicosMenu" href="/cardapio">Cardápio</a>
+						<a class="a topicosMenu" href="/contato">Contato</a>
+						<a class="a topicosMenu" href="/compra">Compra</a>
+						<a class="a topicosMenu" href="/pedidos">Pedidos Anteriores</a>
+					</div>
+				</div>
+				<a href="/login"><button class="topicosMenu btn btn-outline-light">Login</button></a>
+			</nav>
+		</div>
+		
+		<div> <!-- Div efetua compra -->
+			<div class="compra">
+				<p class="title">COMPRAR</p>
+				<p class="subtitle">Realize seu pedido!</p>
+				<form th:action="@{/compra}" th:object="${compraDTO}" method="post">
+				
+					<input th:field="*{produtoId}" type="number" id="id-produto" min="0" placeholder="Id do produto" class="inputId">
+					<input th:field="*{enderecoDestino}" id="input-cep" type="text" placeholder="Digite o CEP do destino" required="true" class="inputDestino">
+					<div class="btnSubmit">
+						<input type="submit" class="inputSubmit" id="submitCompra" value="Comprar">
+					</div>
+				</form>
+			</div>
+		</div>
+		
+		
+		<div> <!-- Div footer -->
+			<nav class="navbar navbar-expand navbar-light d-flex justify-content-between" id="menu2">
+				<div class="container">
+					<div class="navbar-nav">
+						<h4 class="titulo f mFooter">O Soul Veggie</h4>
+						<a class="a b mFooter active" href="/home">Home</a>
+						<a class="a b mFooter" href="/cardapio">Cardápio</a>
+						<a class="a b mFooter" href="/contato">Contato</a>
+						<a class="a b mFooter" href="/compra">Compra</a>
+						<a class="a b mFooter" href="/pedidos">Pedidos Anteriores</a>
+					</div>
+				</div>
+				<img class="mFooterImgFacebook" src="http://127.0.0.1:8887/img/facebook_icon.png"
+				width="50" height="45">
+				<img class="mFooterImgInstagram" src="http://127.0.0.1:8887/img/instagram_icon.png" 
+				width="55" height="50">
+			</nav>
+		</div>
+	</div>
+</body>
+</html>
